@@ -1,0 +1,234 @@
+body {
+    background-color: rgb(255, 130, 172);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: -4px 4px #ef3550,
+                 -8px 8px #f48fb1,
+                 -12px 12px #7e57c2,
+                 -16px 16px #2196f3,
+                 -20px 20px #26c6da,
+                 -24px 24px #43a047,
+                 -28px 28px #eeff41,
+                 -32px 32px #f9a825,
+                 -36px 36px #ff5722;
+}
+
+.h1v {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #ff0000;
+    text-shadow: -4px 4px #ffffff,
+                 -8px 8px #ff004c,
+                 -12px 12px #ff006a,
+                 -16px 16px #ff0055,
+                 -20px 20px #ff0095,
+                 -24px 24px #ff009d,
+                 -28px 28px #ff00c8,
+                 -32px 32px #ea00ff,
+                 -36px 36px #ae00ff;
+}
+
+.h1h {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: -4px 4px #ef3550,
+                 -8px 8px #f48fb1,
+                 -12px 12px #7e57c2,
+                 -16px 16px #2196f3,
+                 -20px 20px #26c6da,
+                 -24px 24px #43a047,
+                 -28px 28px #eeff41,
+                 -32px 32px #f9a825,
+                 -36px 36px #ff5722;
+}
+
+h3 {
+    color: red;
+}
+
+.paren {
+    font-size: x-small;
+    color: #ff0080;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#yes {
+    background-color: rgb(255, 76, 201);
+}
+
+#no {
+    background-color: rgb(255, 59, 59);
+}
+
+button.clicked {
+    transform: scale(1.1); 
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    background-color: white;
+}
+
+button:active {
+    transform: scale(0.9); 
+}
+
+.gif-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.gif-container img {
+    width: 250px;
+    height: 200px; 
+    object-fit: cover; 
+    padding: 15px;
+}
+
+.msg {
+    color: white;
+}
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #ff2f2f;
+    --color-2: #ff5294;
+    --color-3: #da22ff;
+  }
+  
+  .title-word-2 {
+    --color-1: #ff0000;
+    --color-2: #45bbff;
+    --color-3: #fffc5b;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+
+.beatheart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    animation: heartbeat 1s infinite;
+    margin:0 auto
+}
+
+.stopheart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin:0 auto
+}
+
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin:0 auto
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #ff0000;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
